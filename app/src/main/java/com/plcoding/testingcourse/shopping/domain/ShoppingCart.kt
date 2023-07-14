@@ -1,13 +1,9 @@
 package com.plcoding.testingcourse.shopping.domain
 
-import com.plcoding.testingcourseexamples.part1.domain.ShoppingCartCache
 
+class ShoppingCart {
 
-class ShoppingCart(
-    private val cache: ShoppingCartCache
-) {
-
-    private val items = cache.loadCart().toMutableList()
+    private val items = mutableListOf<Product>()
 
     fun addProduct(product: Product, quantity: Int) {
         if(quantity < 0) {
@@ -16,7 +12,6 @@ class ShoppingCart(
         repeat(quantity) {
             items.add(product)
         }
-        cache.saveCart(items)
     }
 
     fun getTotalCost(): Double {
