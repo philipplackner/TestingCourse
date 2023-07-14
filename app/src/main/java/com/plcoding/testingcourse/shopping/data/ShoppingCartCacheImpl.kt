@@ -3,7 +3,7 @@ package com.plcoding.testingcourse.shopping.data
 import android.content.SharedPreferences
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.plcoding.testingcourseexamples.part1.domain.Product
+import com.plcoding.testingcourse.shopping.domain.Product
 import com.plcoding.testingcourseexamples.part1.domain.ShoppingCartCache
 
 class ShoppingCartCacheImpl(
