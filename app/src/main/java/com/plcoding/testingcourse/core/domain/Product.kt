@@ -1,4 +1,4 @@
-package com.plcoding.testingcourse.part1.domain
+package com.plcoding.testingcourse.core.domain
 
 data class Product(
     val id: Int,

@@ -3,14 +3,13 @@ package com.plcoding.testingcourse.shopping.domain
 import assertk.assertFailure
 import assertk.assertThat
 import assertk.assertions.isEqualTo
-import com.plcoding.testingcourse.part1.domain.Product
-import com.plcoding.testingcourse.part1.domain.ShoppingCart
+import com.plcoding.testingcourse.core.domain.Product
+import com.plcoding.testingcourse.core.domain.ShoppingCart
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.CsvSource
-import org.junit.jupiter.params.provider.ValueSource
 
 internal class ShoppingCartTest {
 
