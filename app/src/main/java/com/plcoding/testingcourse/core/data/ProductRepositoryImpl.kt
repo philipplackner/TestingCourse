@@ -26,7 +26,7 @@ class ProductRepositoryImpl(
         }
     }
 
-    override suspend fun cancelPurchase(purchaseId: String): Result<Unit> {
+    override suspend fun cancelPurchase(purchaseId: Int): Result<Unit> {
         TODO("Not yet implemented")
     }
 }
