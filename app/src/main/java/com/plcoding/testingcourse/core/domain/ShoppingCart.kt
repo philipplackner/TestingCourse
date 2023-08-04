@@ -1,7 +1,5 @@
 package com.plcoding.testingcourse.core.domain
 
-import com.plcoding.testingcourseexamples.part1.domain.ShoppingCartCache
-
 
 class ShoppingCart(
     private val cache: ShoppingCartCache

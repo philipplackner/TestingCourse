@@ -1,10 +1,9 @@
-package com.plcoding.testingcourse.shopping.domain
+package com.plcoding.testingcourse.core.domain
 
 import assertk.assertFailure
 import assertk.assertThat
 import assertk.assertions.isEqualTo
-import com.plcoding.testingcourse.core.domain.Product
-import com.plcoding.testingcourse.core.domain.ShoppingCart
+import com.plcoding.testingcourse.core.data.ShoppingCartCacheFake
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
@@ -14,10 +13,12 @@ import org.junit.jupiter.params.provider.CsvSource
 internal class ShoppingCartTest {
 
     private lateinit var cart: ShoppingCart
+    private lateinit var cacheFake: ShoppingCartCacheFake
 
     @BeforeEach
     fun setUp() {
-        cart = ShoppingCart()
+        cacheFake = ShoppingCartCacheFake()
+        cart = ShoppingCart(cacheFake)
     }
 
     @ParameterizedTest

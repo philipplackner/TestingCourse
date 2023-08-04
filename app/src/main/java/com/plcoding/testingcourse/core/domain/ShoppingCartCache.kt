@@ -1,6 +1,4 @@
-package com.plcoding.testingcourseexamples.part1.domain
-
-import com.plcoding.testingcourse.core.domain.Product
+package com.plcoding.testingcourse.core.domain
 
 interface ShoppingCartCache {
     fun saveCart(items: List<Product>)

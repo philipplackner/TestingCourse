@@ -4,7 +4,7 @@ import android.content.SharedPreferences
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.plcoding.testingcourse.core.domain.Product
-import com.plcoding.testingcourseexamples.part1.domain.ShoppingCartCache
+import com.plcoding.testingcourse.core.domain.ShoppingCartCache
 
 class ShoppingCartCacheImpl(
     private val sharedPreferences: SharedPreferences
