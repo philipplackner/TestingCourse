@@ -3,6 +3,8 @@ package com.plcoding.testingcourse.shopping.domain
 import assertk.assertFailure
 import assertk.assertThat
 import assertk.assertions.isEqualTo
+import com.plcoding.testingcourse.part1.domain.Product
+import com.plcoding.testingcourse.part1.domain.ShoppingCart
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test

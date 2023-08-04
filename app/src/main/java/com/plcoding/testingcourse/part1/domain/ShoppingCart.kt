@@ -1,6 +1,4 @@
-package com.plcoding.testingcourse.shopping.domain
-
-import androidx.annotation.OpenForTesting
+package com.plcoding.testingcourse.part1.domain
 
 
 class ShoppingCart {

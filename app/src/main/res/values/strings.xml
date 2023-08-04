@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TestingCourse</string>
+    <string name="successfully_saved_profile">Successfully saved profile</string>
 </resources>
