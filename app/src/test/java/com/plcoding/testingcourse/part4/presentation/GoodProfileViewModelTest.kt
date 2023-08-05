@@ -1,8 +1,7 @@
 package com.plcoding.testingcourse.part4.presentation
 
-import com.plcoding.testingcourse.part4.domain.AnalyticsLogger
-import com.plcoding.testingcourse.part4.domain.LogParam
-import org.junit.jupiter.api.Assertions.*
+import com.plcoding.testingcourse.core.domain.AnalyticsLogger
+import com.plcoding.testingcourse.core.domain.LogParam
 import org.junit.jupiter.api.BeforeEach
 
 internal class GoodProfileViewModelTest {

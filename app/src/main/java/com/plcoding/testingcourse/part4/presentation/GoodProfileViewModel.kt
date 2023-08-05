@@ -5,8 +5,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import com.plcoding.testingcourse.R
-import com.plcoding.testingcourse.part4.domain.AnalyticsLogger
-import com.plcoding.testingcourse.part4.domain.LogParam
+import com.plcoding.testingcourse.core.domain.AnalyticsLogger
+import com.plcoding.testingcourse.core.domain.LogParam
 
 class GoodProfileViewModel(
     private val analytics: AnalyticsLogger

@@ -1,4 +1,4 @@
-package com.plcoding.testingcourse.part4.domain
+package com.plcoding.testingcourse.core.domain
 
 interface AnalyticsLogger {
     fun logEvent(key: String, vararg params: LogParam<Any>)

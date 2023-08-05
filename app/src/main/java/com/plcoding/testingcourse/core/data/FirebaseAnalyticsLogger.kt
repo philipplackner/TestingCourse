@@ -1,11 +1,11 @@
-package com.plcoding.testingcourse.part4.data
+package com.plcoding.testingcourse.core.data
 
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.analytics.ktx.logEvent
 import com.google.firebase.ktx.Firebase
-import com.plcoding.testingcourse.part4.domain.AnalyticsLogger
-import com.plcoding.testingcourse.part4.domain.LogParam
+import com.plcoding.testingcourse.core.domain.AnalyticsLogger
+import com.plcoding.testingcourse.core.domain.LogParam
 
 class FirebaseAnalyticsLogger(
     private val analytics: FirebaseAnalytics = Firebase.analytics
