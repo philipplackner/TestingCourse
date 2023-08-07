@@ -8,7 +8,7 @@ data class ScheduledVideoCall(
     val remoteUserId: String,
     val time: LocalDateTime,
 ) {
-    fun isExpired(): Boolean {
-        return time.isBefore(LocalDateTime.now())
+    fun isExpired(clock: Clock = Clock.systemDefaultZone()): Boolean {
+        return time.isBefore(LocalDateTime.now(clock))
     }
 }
