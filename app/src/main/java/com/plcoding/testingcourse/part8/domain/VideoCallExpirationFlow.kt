@@ -12,7 +12,6 @@ import java.time.Clock
 
 class VideoCallExpirationFlow(
     private val calls: List<ScheduledVideoCall>,
-    private val clock: Clock = Clock.systemDefaultZone()
 ): Flow<List<ScheduledVideoCall>> {
 
     private fun tickerFlow() = flow {
@@ -26,7 +25,7 @@ class VideoCallExpirationFlow(
         tickerFlow()
             .flowOn(Dispatchers.Main)
             .map {
-                calls.filter { it.isExpired(clock) }
+                calls.filter { it.isExpired() }
             }
             .distinctUntilChanged()
             .collect(collector)
