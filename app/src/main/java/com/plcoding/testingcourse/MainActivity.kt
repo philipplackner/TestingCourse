@@ -14,12 +14,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.plcoding.testingcourse.part11.presentation.ProfileScreen
+import com.plcoding.testingcourse.part11.presentation.previewProfileState
 import com.plcoding.testingcourse.part7.presentation.ProfileViewModel
 import com.plcoding.testingcourse.ui.theme.TestingCourseTheme
 
 class MainActivity : ComponentActivity() {
 
-    private val viewModel by viewModels<ProfileViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,8 +30,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    val state by viewModel.state.collectAsState()
-                    ProfileScreen(state = state)
+                    ProfileScreen(state = previewProfileState())
                 }
             }
         }
