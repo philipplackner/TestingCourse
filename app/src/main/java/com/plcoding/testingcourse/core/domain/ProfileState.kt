@@ -1,6 +1,6 @@
-package com.plcoding.testingcourse.part7.presentation
+package com.plcoding.testingcourse.core.domain
 
-import com.plcoding.testingcourse.part7.domain.Profile
+import com.plcoding.testingcourse.core.domain.Profile
 
 data class ProfileState(
     val profile: Profile? = null,

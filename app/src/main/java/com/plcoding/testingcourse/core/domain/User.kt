@@ -1,4 +1,4 @@
-package com.plcoding.testingcourse.part7.domain
+package com.plcoding.testingcourse.core.domain
 
 data class User(
     val id: String,

@@ -1,6 +1,6 @@
 package com.plcoding.testingcourse.part7.data
 
-import com.plcoding.testingcourse.part7.domain.Profile
+import com.plcoding.testingcourse.core.domain.Profile
 import com.plcoding.testingcourse.part7.domain.UserRepository
 import com.plcoding.testingcourse.util.profile
 

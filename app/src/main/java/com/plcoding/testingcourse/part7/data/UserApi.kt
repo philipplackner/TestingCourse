@@ -1,7 +1,7 @@
 package com.plcoding.testingcourse.part7.data
 
-import com.plcoding.testingcourse.part7.domain.Post
-import com.plcoding.testingcourse.part7.domain.User
+import com.plcoding.testingcourse.core.domain.Post
+import com.plcoding.testingcourse.core.domain.User
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

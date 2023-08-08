@@ -1,8 +1,7 @@
 package com.plcoding.testingcourse.part7.data
 
-import com.plcoding.testingcourse.part7.domain.Post
-import com.plcoding.testingcourse.part7.domain.User
-import io.mockk.InternalPlatformDsl.toStr
+import com.plcoding.testingcourse.core.domain.Post
+import com.plcoding.testingcourse.core.domain.User
 
 class UserApiFake: UserApi {
 
