@@ -48,7 +48,7 @@ internal class ShoppingCartTest {
     ) {
         // GIVEN
         val product = Product(
-            id = 0,
+            id = 1,
             name = "Ice cream",
             price = 5.0
         )
