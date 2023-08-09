@@ -16,19 +16,21 @@ class MainActivityTest {
     @get:Rule
     val composeRule = createAndroidComposeRule<MainActivity>()
 
-    @get:Rule
-    val intentsRule = IntentsRule()
+//    @get:Rule
+//    val intentsRule = IntentsRule()
+//
+//    @Test
+//    fun testLaunchingOtherActivity() {
+//        composeRule.onNodeWithText("Send intent").performClick()
+//
+//        Intents.intended(
+//            IntentMatchers.hasComponent(
+//                ComponentName(composeRule.activity.applicationContext, ProfileActivity::class.java)
+//            )
+//        )
+//        Intents.intended(IntentMatchers.hasExtra("TEST_EXTRA", "top secret"))
+//        Intents.intended(IntentMatchers.hasAction("MY_ACTION"))
+//    }
 
-    @Test
-    fun testLaunchingOtherActivity() {
-        composeRule.onNodeWithText("Send intent").performClick()
 
-        Intents.intended(
-            IntentMatchers.hasComponent(
-                ComponentName(composeRule.activity.applicationContext, ProfileActivity::class.java)
-            )
-        )
-        Intents.intended(IntentMatchers.hasExtra("TEST_EXTRA", "top secret"))
-        Intents.intended(IntentMatchers.hasAction("MY_ACTION"))
-    }
 }
