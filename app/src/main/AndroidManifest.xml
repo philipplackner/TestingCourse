@@ -23,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".part12.presentation.ProfileActivity" />
     </application>
 
 </manifest>

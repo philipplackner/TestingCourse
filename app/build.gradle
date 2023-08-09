@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace 'com.plcoding.testingcourse'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.plcoding.testingcourse"
         minSdk 26
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -202,6 +202,7 @@ dependencies {
     testImplementation 'app.cash.turbine:turbine:0.7.0'
 
     // Android test
+    androidTestImplementation "com.willowtreeapps.assertk:assertk:0.26.1"
     androidTestImplementation "io.mockk:mockk-android:1.12.5"
     androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
     androidTestImplementation 'app.cash.turbine:turbine:0.7.0'
