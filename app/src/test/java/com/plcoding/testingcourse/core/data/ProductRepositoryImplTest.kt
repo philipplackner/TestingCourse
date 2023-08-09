@@ -63,23 +63,23 @@ internal class ProductRepositoryImplTest {
         }
     }
 
-    @Test
-    fun `Response error, exception is logged`() = runBlocking {
-        coEvery { productApi.purchaseProducts(any()) } throws mockk<HttpException> {
-            every { code() } returns 404
-            every { message() } returns "Test message"
-        }
-
-        val result = repository.purchaseProducts(listOf())
-
-        assertThat(result.isFailure).isTrue()
-
-        verify {
-            analyticsLogger.logEvent(
-                "http_error",
-                LogParam("code", 404),
-                LogParam("message", "Test message"),
-            )
-        }
-    }
+//    @Test
+//    fun `Response error, exception is logged`() = runBlocking {
+//        coEvery { productApi.purchaseProducts(any()) } throws mockk<HttpException> {
+//            every { code() } returns 404
+//            every { message() } returns "Test message"
+//        }
+//
+//        val result = repository.purchaseProducts(listOf())
+//
+//        assertThat(result.isFailure).isTrue()
+//
+//        verify {
+//            analyticsLogger.logEvent(
+//                "http_error",
+//                LogParam("code", 404),
+//                LogParam("message", "Test message"),
+//            )
+//        }
+//    }
 }

@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'de.mannodermaus.android-junit5' version "1.9.3.0"
+    id "jacoco"
 }
 
 android {
@@ -28,11 +29,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
     }
     kotlinOptions {
-        jvmTarget = '17'
+        jvmTarget = '18'
     }
     buildFeatures {
         compose true
