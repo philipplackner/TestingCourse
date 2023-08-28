@@ -5,7 +5,7 @@ class ShoppingCart(
     private val cache: ShoppingCartCache
 ) {
 
-    private val validProductIds = listOf(1, 2, 3, 4, 5)
+    private val validProductIds = listOf(0, 1, 2, 3, 4, 5)
     private val items = cache.loadCart().toMutableList()
 
     fun addProduct(product: Product, quantity: Int) {
