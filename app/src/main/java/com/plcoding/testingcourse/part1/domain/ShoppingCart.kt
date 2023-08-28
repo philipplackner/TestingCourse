@@ -3,7 +3,7 @@ package com.plcoding.testingcourse.part1.domain
 
 class ShoppingCart {
 
-    private val validProductIds = listOf(1, 2, 3, 4, 5)
+    private val validProductIds = listOf(0, 1, 2, 3, 4, 5)
     private val items = mutableListOf<Product>()
 
     fun addProduct(product: Product, quantity: Int) {
