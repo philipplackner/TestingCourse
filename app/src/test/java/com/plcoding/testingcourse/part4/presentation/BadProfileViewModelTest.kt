@@ -11,7 +11,7 @@ internal class BadProfileViewModelTest {
 
     @BeforeEach
     fun setUp() {
-        viewModel = BadProfileViewModel(Application())
+        viewModel = BadProfileViewModel()
     }
 
     @Test
