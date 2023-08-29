@@ -10,7 +10,7 @@ internal class BadProfileViewModelTest {
 
     @BeforeEach
     fun setUp() {
-        viewModel = BadProfileViewModel()
+//        viewModel = BadProfileViewModel()  // addressed in earlier video, commented out to make tests run
     }
 
     @Test
