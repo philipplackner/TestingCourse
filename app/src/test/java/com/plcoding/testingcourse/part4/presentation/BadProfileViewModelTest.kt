@@ -1,5 +1,6 @@
 package com.plcoding.testingcourse.part4.presentation
 
+import android.app.Application
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
@@ -10,7 +11,7 @@ internal class BadProfileViewModelTest {
 
     @BeforeEach
     fun setUp() {
-        viewModel = BadProfileViewModel()
+        viewModel = BadProfileViewModel(Application()) // <-- This is the problem, Application is passed in just to make the test pass
     }
 
     @Test
